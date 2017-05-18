@@ -1,3 +1,4 @@
+.vscode
 
 # created by git-ignore
 # Logs
@@ -33,7 +34,8 @@ node_modules
 .LSOverride
 
 # Icon must ends with two \r.
-Icon
+Icon
+
 
 # Thumbnails
 ._*
