@@ -20,6 +20,8 @@
   },
   "devDependencies": {
     "babel-plugin-inline-react-svg": "^0.4.0",
+    "babel-plugin-transform-flow-strip-types": "^6.22.0",
+    "cz-conventional-changelog": "^2.0.0",
     "eslint": "^3.19.0",
     "eslint-config-standard": "^10.2.0",
     "eslint-config-standard-react": "^4.3.0",
@@ -37,6 +39,12 @@
     "next": "beta",
     "normalize.css": "^6.0.0",
     "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "react-dom": "^15.5.4",
+    "react-pixnode-shuffle-images": "1.0.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
