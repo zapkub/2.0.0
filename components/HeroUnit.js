@@ -1,10 +1,21 @@
 import DownArrowIcon from '../resources/down-arrow-icon.svg'
 import NavigationBar from './NavigationBar'
+import ShuffleImagesByPixnodeGiveMeThatDamnTicket from 'react-pixnode-shuffle-images'
 import ReactBKKLogo from '../resources/reactbkk.svg'
+
+const images = [
+  '/static/hero-bg.jpg',
+  'https://cloud.githubusercontent.com/assets/193136/26200621/2d440318-3bf9-11e7-909e-44cab5c9c4a8.jpg',
+  'https://cloud.githubusercontent.com/assets/193136/26200625/3074fc04-3bf9-11e7-8764-b5c0adeb5bd2.jpg'
+]
 
 export default function HeroUnit () {
   return (
     <header>
+      <div className='shuffle-container'>
+        <ShuffleImagesByPixnodeGiveMeThatDamnTicket
+          images={images} />
+      </div>
       <div className='bg-overlay' />
       <div className='spacer' />
       <div className='center'>
@@ -17,7 +28,7 @@ export default function HeroUnit () {
         header {
           text-align: center;
           position: relative;
-          background: url(static/hero-bg.jpg) center no-repeat;
+          /** background: url(static/hero-bg.jpg) center no-repeat; */
           background-size: cover;
         }
         .bg-overlay {
@@ -25,6 +36,14 @@ export default function HeroUnit () {
           top: 0; right: 0; bottom: 0; left: 0;
           background: #222;
           opacity: 0.9;
+        }
+        .shuffle-container {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 0;
         }
         .center {
           position: relative;
