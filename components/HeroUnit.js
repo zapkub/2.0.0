@@ -14,6 +14,8 @@ export default function HeroUnit () {
     <header>
       <div className='shuffle-container'>
         <ShuffleImagesByPixnodeGiveMeThatDamnTicket
+          maxTimeout={4000}
+          minTimeout={3000}
           images={images} />
       </div>
       <div className='bg-overlay' />

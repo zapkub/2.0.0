@@ -40,7 +40,7 @@
     "normalize.css": "^6.0.0",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
-    "react-pixnode-shuffle-images": "1.0.3"
+    "react-pixnode-shuffle-images": "^1.1.1"
   },
   "config": {
     "commitizen": {
