@@ -46,3 +46,6 @@ Icon
 
 /.next/
 /out/
+
+# Webstorm .idea
+.idea
